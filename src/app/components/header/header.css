@@ -1,0 +1,39 @@
+:host {
+  display: block;
+  .header {
+    background-color: var(--super-light-grey);
+    padding: 12px 0px;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .header-mail {
+    margin-right: 3vw;
+  }
+  .header-whatsapp a {
+    color: var(--violet);
+    margin-left: 5px;
+  }
+  .header-mail a {
+    color: var(--violet);
+    margin-left: 5px;
+  }
+  .header-mail-icon {
+    transform: translate(10px);
+    margin-left: 10px;
+    color: var(--violet);
+  }
+
+  @media only screen and (max-width: 519px) {
+    .header {
+      flex-direction: column;
+      align-items: center;
+      padding: 6px 0px;
+    }
+    .header-mail {
+      margin-right: unset;
+    }
+    .header-mail i {
+      margin-left: unset;
+    }
+  }
+}

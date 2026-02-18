@@ -1,0 +1,23 @@
+:host {
+  display: block;
+
+  .photo-stripe {
+    display: flex;
+    align-items: center;
+  }
+
+  .photo-stripe-text {
+    position: absolute;
+    margin-left: 30px;
+    font-family: 'Open Sans', Arial, Tahoma, sans-serif;
+    line-height: 32px;
+    font-weight: 300;
+    letter-spacing: 0px;
+    color: var(--white);
+    text-align: center;
+  }
+
+  .photo-stripe-image {
+    width: 100%;
+  }
+}

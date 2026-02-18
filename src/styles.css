@@ -1,1 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
+@import 'tailwindcss';
+
+@plugin "daisyui" {
+  themes: light --default;
+}
+
+:root {
+  --violet: rgb(102, 47, 148);
+  --white: rgb(250, 252, 255);
+  --beige: rgb(253, 246, 228);
+  --light-grey: rgb(204, 204, 204);
+  --super-light-grey: rgb(244, 244, 244);
+  --dark-grey: rgb(83, 83, 83);
+  --text-grey: rgb(120, 120, 120);
+  --text-light-grey: rgb(147, 147, 147);
+  --linkedin: rgb(0, 115, 177);
+  --link-text: rgb(89, 176, 226);
+  --whatsapp: rgb(70, 194, 86);
+}

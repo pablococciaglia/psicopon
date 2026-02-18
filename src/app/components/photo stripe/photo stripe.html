@@ -1,0 +1,12 @@
+<div class="photo-stripe">
+  @if (text()) {
+    <h1 class="photo-stripe-text">{{ text() }}</h1>
+  }
+  <img
+    class="photo-stripe-image"
+    [src]="photo()"
+    [alt]="text()"
+    [style]="{ minHeight: height() }"
+  />
+  <ng-content />
+</div>
