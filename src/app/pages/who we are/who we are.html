@@ -1,1 +1,56 @@
-<p>who we are works!</p>,
+<app-photo-stripe
+  photo="https://res.cloudinary.com/ddbrs5z8v/image/upload/v1770765110/whoWeAre_x2uejb.jpg"
+  [text]="portada"
+/>
+<app-violet-stripe [text]="title" />
+<div class="container">
+  <h1 class="whoweare-title violet-letter thin-letter">
+    {{ members.title }}
+  </h1>
+  @for (member of members.professionals; track member.license) {
+    <div class="whoweare-professional-card">
+      <div>
+        <img class="whoweare-professional-card-photo" [src]="member.photo" [alt]="member.name" />
+      </div>
+      <div>
+        <div class="whoweare-professional-card-name-license">
+          <h2 class="violet-letter thin-letter">{{ member.name }}</h2>
+          <h3 class="thin-letter">{{ member.license }}</h3>
+        </div>
+        @for (item of member.experience; track item) {
+          <p>{{ item }}</p>
+        }
+
+        @if (member.linkedin) {
+          <a target="_blank" [href]="member.linkedin">
+            <fa-icon [icon]="faLinkedin" class="whoweare-linkedin-icon" />
+          </a>
+        }
+      </div>
+    </div>
+  }
+  <h1 class="violet-letter thin-letter mt-5">{{ stuff.title }}</h1>
+  <ul>
+    @for (person of stuff.people; track person) {
+      <li class="light-grey-letter">
+        <h3 class="thin-letter light-grey-letter">{{ person }}</h3>
+      </li>
+    }
+  </ul>
+</div>
+<app-photo-stripe
+  photo="https://res.cloudinary.com/ddbrs5z8v/image/upload/v1770765109/whoWeAre-2_haz93a.jpg"
+>
+  <div class="whoweare-photo-stripe-text">
+    <h1 class="whoweare-photo-stripe-text-title">{{ extras.title }}</h1>
+    <ul>
+      @for (item of extras.items; track item) {
+        <li>
+          <h3 class="whoweare-photo-stripe-text-item thin-letter">
+            {{ item }}
+          </h3>
+        </li>
+      }
+    </ul>
+  </div>
+</app-photo-stripe>

@@ -1,0 +1,19 @@
+<footer>
+  @if (!isHome()) {
+    <div class="text-body">
+      <div class="text-body-short">
+        <h2 class="footer-whatsapp">
+          <fa-icon [icon]="faWhatsapp" class="footer-icon footer-whatsapp-i" />
+          <a target="_blank" rel="noreferrer" href="https://wa.me/5491153109465">
+            +54 9 11 5310-9465
+          </a>
+        </h2>
+        <h2 class="footer-mail">
+          <fa-icon [icon]="faEnvelope" class="footer-icon footer-mail-i" />
+          <a href="mailto: redpsicologosuba@gmail.com"> redpsicologosuba@gmail.com </a>
+        </h2>
+      </div>
+    </div>
+  }
+  <div class="footer">©{{ currentYear }} Red Psicólogos UBA. Todos los derechos reservados.</div>
+</footer>

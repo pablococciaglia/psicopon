@@ -1,3 +1,50 @@
 :host {
   display: block;
+  .whoweare-professional-card {
+  display: flex;
+  margin-bottom: 20px;
+  gap: 3vw;
+}
+.whoweare-professional-card-photo {
+  width: 33vw;
+  min-width: 140px;
+  max-width: 240px;
+}
+.whoweare-photo-stripe-text {
+  position: absolute;
+  margin-left: 30px;
+  color: white;
+}
+.whoweare-photo-stripe-text ul li {
+  color: white;
+}
+.whoweare-professional-card-name-license {
+  max-width: fit-content;
+  border-bottom: 1px solid var(--violet);
+  padding-right: 35px;
+  margin-bottom: 10px;
+}
+.whoweare-title {
+  margin-bottom: 3vw;
+}
+.whoweare-photo-stripe-text-title {
+  margin-bottom: 2vw;
+}
+.whoweare-photo-stripe-text-item {
+  margin-bottom: 1vw;
+}
+.whoweare-linkedin-icon {
+  color: var(--violet);
+  font-size: 2rem;
+}
+.whoweare-linkedin-icon:hover {
+  color: var(--linkedin);
+  transition: 1s;
+}
+@media only screen and (max-width: 991px) {
+  .whoweare-professional-card {
+    flex-direction: column;
+  }
+}
+
 }

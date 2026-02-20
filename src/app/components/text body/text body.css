@@ -1,0 +1,51 @@
+:host {
+  display: block;
+.text-body {
+  background-color: var(--beige);
+}
+.text-body-long {
+  padding: 80px 20vw 40px 20vw;
+  color: var(--text-grey);
+}
+.text-body-long h3 {
+  color: var(--text-grey);
+}
+.text-body-long h3 a {
+  color: var(--link-text);
+}
+.text-body-short {
+  display: flex;
+  justify-content: center;
+  gap: 10vw;
+  padding-top: 8px;
+}
+.text-body-short h2 {
+  display: flex;
+  align-items: center;
+}
+.text-body-short h2 a {
+  color: var(--link-text);
+}
+.text-body-short h2 i {
+  font-size: 2rem;
+  margin-right: 10px;
+}
+.footer-whatsapp i {
+  color: var(--whatsapp);
+}
+.footer-mail i {
+  color: var(--linkedin);
+}
+
+@media only screen and (max-width: 725px) {
+  .text-body-long {
+    padding: 80px 2vw 40px 2vw;
+  }
+  .text-body-short {
+    flex-direction: column;
+    align-items: center;
+    gap: unset;
+  }
+}
+
+}

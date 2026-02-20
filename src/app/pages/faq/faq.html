@@ -1,1 +1,14 @@
-<p>faq works!</p>,
+<app-photo-stripe
+  photo="https://res.cloudinary.com/ddbrs5z8v/image/upload/v1770765110/faq_tiac93.jpg"
+  [text]="portada"
+/>
+<div class="container">
+  @for (question of faq; track question.question; let i = $index) {
+    <div [tabindex]="i" class="collapse collapse-arrow bg-base-100 border-base-300 border">
+      <div class="collapse-title font-semibold">{{ question.question }}</div>
+      <div class="collapse-content text-sm">
+        {{ question.answer }}
+      </div>
+    </div>
+  }
+</div>

@@ -13,7 +13,7 @@
   }
 
   .violet-stripe {
-    background-color: var(--violet) !important;
+    background-color: var(--violet);
     display: flex;
     align-items: center;
     justify-content: center;

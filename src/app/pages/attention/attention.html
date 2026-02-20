@@ -1,1 +1,20 @@
-<p>attention works!</p>,
+<app-photo-stripe
+  photo="https://res.cloudinary.com/ddbrs5z8v/image/upload/v1770765110/attention_dcwsd3.jpg"
+  [text]="portada"
+/>
+<app-violet-stripe [text]="title" />
+<div class="container" key="{photo}">
+  @for (card of cards; track card.title) {
+    <div class="attention-card">
+      <div>
+        <img class="attention-card-photo" [src]="card.photo" alt="title" />
+      </div>
+      <div>
+        <div class="attention-card-text">
+          <h1 class="attention-card-title">{{ card.title }}</h1>
+          <p class="attention-card-body roboto">{{ card.body }}</p>
+        </div>
+      </div>
+    </div>
+  }
+</div>

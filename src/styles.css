@@ -19,3 +19,89 @@
   --link-text: rgb(89, 176, 226);
   --whatsapp: rgb(70, 194, 86);
 }
+
+
+* {
+  font-size: 100%;
+  font-family: "Open Sans", Arial, Tahoma, sans-serif;
+}
+
+@media only screen and (max-width: 481px) {
+  html {
+    font-size: 80%;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  html {
+    font-size: 60%;
+  }
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.6rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+}
+
+p {
+  font-size: 0.9rem;
+  margin-bottom: 0;
+}
+
+h4 {
+  font-size: 0.8rem;
+}
+
+h5 {
+  font-size: 0.5rem;
+}
+
+.container {
+  margin-top: 3vw;
+  margin-bottom: 3vw;
+  width: 100%;
+  padding-right: 15px; /* o 1rem */
+  padding-left: 15px;  /* o 1rem */
+  margin-right: auto;
+  margin-left: auto;
+  box-sizing: border-box;
+}
+
+/* Media queries para simular el comportamiento responsive de Bootstrap */
+@media (min-width: 576px) { .container { max-width: 540px; } }
+@media (min-width: 768px) { .container { max-width: 720px; } }
+@media (min-width: 992px) { .container { max-width: 960px; } }
+@media (min-width: 1200px) { .container { max-width: 1140px; } }
+
+.violet-letter {
+  color: var(--violet);
+}
+
+.light-grey-letter {
+  color: var(--text-light-grey);
+}
+
+.thin-letter {
+  font-weight: 300;
+}
+
+.roboto {
+  font-family: "Roboto", Arial, Tahoma, sans-serif;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+a:link,
+a:visited,
+a:active {
+  text-decoration: none;
+}

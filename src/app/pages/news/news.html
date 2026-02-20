@@ -1,1 +1,29 @@
-<p>news works!</p>,
+<app-photo-stripe
+  photo="https://res.cloudinary.com/ddbrs5z8v/image/upload/v1770765111/news_mnehgj.jpg"
+  [text]="portada"
+/>
+<div class="container">
+  <div
+    class="place-items-center grid auto-cols-max grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-1"
+  >
+    @for (card of cards; track card.title) {
+      <div class="card h-133 max-w-100 border border-(--light-grey)">
+        <!-- onClick={() => navigateToArticle(card.link)} -->
+        <figure>
+          <img [src]="card.photo" class="cursor-pointer card-img-top" [alt]="card.title" />
+        </figure>
+        <div class="card-body">
+          <!-- onClick={() => navigateToArticle(link)} -->
+          <h2 class="cursor-pointer card-title leading-6 violet-letter thin-letter">
+            {{ card.title }}
+          </h2>
+          <p class="card-text">{{ card.shortText }}</p>
+        </div>
+        <div class="card-actions justify-end bg-(--super-light-grey)">
+          <!-- onClick={() => navigateToArticle(link)} -->
+          <button type="button" class="btn btn-link">Leer más</button>
+        </div>
+      </div>
+    }
+  </div>
+</div>

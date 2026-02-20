@@ -1,9 +1,14 @@
 import { Component } from '@angular/core';
+import { text } from '../../components/texts';
+import { PhotoStripe } from '../../components/photo stripe/photo stripe';
 
 @Component({
   selector: 'app-news',
-  imports: [],
+  imports: [PhotoStripe],
   templateUrl: './news.html',
   styleUrl: './news.css',
 })
-export class News { }
+export class News {
+  cards = text.news.cards;
+  portada = text.news.portada;
+}
