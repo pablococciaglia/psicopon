@@ -1,5 +1,5 @@
-<div class="navbar bg-base-100 shadow-sm">
-  <div class="navbar-start">
+<div class="navbar bg-base-100 shadow-sm p-0">
+  <div class="navbar-start h-max p-0">
     <div class="dropdown">
       <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
         <svg
@@ -37,15 +37,15 @@
       alt="logo red psicologos uba"
     />
   </div>
-  <div class="navbar-center hidden lg:flex">
-    <ul class="menu menu-horizontal px-1">
+  <div class="navbar-center hidden lg:flex h-max p-0">
+    <ul class="menu menu-horizontal px-1 h-max p-0">
       @for (route of arrayOfTitles; track route.link) {
-        <li>
-          <a
-            [routerLinkActiveOptions]="{ exact: true }"
-            [routerLink]="route.link"
-            [routerLinkActive]="['border-b-10', 'text-(--violet)']"
-          >
+        <li
+          class="p-0 pt-4 h-16 m-0"
+          [routerLinkActiveOptions]="{ exact: true }"
+          [routerLinkActive]="['border-b-5', 'text-(--violet)']"
+        >
+          <a class="color-(--light-grey)" [routerLink]="route.link">
             {{ route.title }}
           </a>
         </li>

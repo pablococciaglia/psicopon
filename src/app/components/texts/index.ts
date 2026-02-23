@@ -403,7 +403,10 @@ export const text = {
           ['h3', '6. Los nuevos retos pueden hacerte envejecer mejor'],
           'Un estudio llevado a cabo en 2013 encontró que aprender nuevas habilidades mientras se mantiene una red social fuerte nos ayuda a conservar una buena agudeza mental a medida que envejecemos.',
           'La directora del estudio Denise Park, investigadora de la Universidad de Texas en Estados Unidos concluyó: “Parece ser que salir a realizar actividades no es suficiente. Es importante salir y realizar actividades que no sean familiares y que sean mentalmente desafiantes, pues proporcionan una gran estimulación tanto a nivel mental como social. Cuando estas dentro de la zona de confort es posible que estés fuera de la zona de mejora”.',
-          ['photo', '../assets/articles-1.jpg'],
+          [
+            'photo',
+            'https://res.cloudinary.com/ddbrs5z8v/image/upload/v1770765079/articles-1_d95chr.jpg',
+          ],
           ['h2', 'Algunas recomendaciones para lograrlo'],
           'Desde luego, es muy fácil decirlo pero bastante más complicado hacerlo. Sin embargo, y aunque salir de la zona de confort sea complicado por la propia definición de este concepto, no es misión imposible. Si necesitas algo de ayuda o claves para salir de la zona de confort, puedes seguir estas pautas de comportamiento.',
           ['h3', '1. Desafíate y rinde al máximo'],

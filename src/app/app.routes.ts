@@ -6,6 +6,7 @@ import { OnlineTherapy } from './pages/online therapy/online therapy';
 import { Attention } from './pages/attention/attention';
 import { News } from './pages/news/news';
 import { Faq } from './pages/faq/faq';
+import { Article } from './pages/article/article';
 
 export const routes: Routes = [
   {
@@ -27,6 +28,10 @@ export const routes: Routes = [
   {
     path: Url.news,
     component: News,
+  },
+  {
+    path: `${Url.news}/:articleId`,
+    component: Article,
   },
   {
     path: Url.FAQ,

@@ -1,0 +1,49 @@
+<div class="container">
+  <h1 class="articles-title violet-letter thin-letter">
+    <fa-icon
+      [icon]="faArrowAltCircleLeft"
+      class="circle-left cursor-pointer"
+      [routerLink]="backToNews"
+    />
+    {{ title }}
+  </h1>
+  <div class="articles-photo-container">
+    <img [src]="photo" alt="foto del artículo" />
+  </div>
+  <div class="articles-body">
+    @for (paragraph of htmlFullText; track paragraph) {
+      @if (typeof paragraph === 'string') {
+        <p class="articles-p">{{ paragraph }}</p>
+      }
+
+      @if (paragraph[0] === 'i') {
+        <p class="articles-p italic">{{ paragraph[1] }}</p>
+      }
+
+      @if (paragraph[0] === 'b') {
+        <p class="articles-p bold">{{ paragraph[1] }}</p>
+      }
+
+      @if (paragraph[0] === 'h2') {
+        <h2 class="articles-h2 violet-letter thin-letter">{{ paragraph[1] }}</h2>
+      }
+
+      @if (paragraph[0] === 'h3') {
+        <h3 class="articles-h3 violet-letter thin-letter">{{ paragraph[1] }}</h3>
+      }
+
+      @if (paragraph[0] === 'li') {
+        <li class="articles-li mb-2 roboto">
+          {{ paragraph[1] }}
+        </li>
+      }
+
+      @if (paragraph[0] === 'photo') {
+        <div class="articles-photo-container">
+          <img [src]="paragraph[1]" alt="article-pic" />
+        </div>
+      }
+    }
+  </div>
+  <span> Autor: {{ autor }} - {{ source }} </span>
+</div>

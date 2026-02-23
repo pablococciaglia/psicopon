@@ -8,20 +8,25 @@
   >
     @for (card of cards; track card.title) {
       <div class="card h-133 max-w-100 border border-(--light-grey)">
-        <!-- onClick={() => navigateToArticle(card.link)} -->
         <figure>
-          <img [src]="card.photo" class="cursor-pointer card-img-top" [alt]="card.title" />
+          <img
+            [routerLink]="card.link"
+            [src]="card.photo"
+            class="cursor-pointer card-img-top"
+            [alt]="card.title"
+          />
         </figure>
         <div class="card-body">
-          <!-- onClick={() => navigateToArticle(link)} -->
-          <h2 class="cursor-pointer card-title leading-6 violet-letter thin-letter">
+          <h2
+            [routerLink]="card.link"
+            class="cursor-pointer card-title leading-6 violet-letter thin-letter"
+          >
             {{ card.title }}
           </h2>
           <p class="card-text">{{ card.shortText }}</p>
         </div>
         <div class="card-actions justify-end bg-(--super-light-grey)">
-          <!-- onClick={() => navigateToArticle(link)} -->
-          <button type="button" class="btn btn-link">Leer más</button>
+          <button [routerLink]="card.link" type="button" class="btn btn-link">Leer más</button>
         </div>
       </div>
     }
