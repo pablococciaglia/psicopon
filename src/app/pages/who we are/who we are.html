@@ -39,9 +39,10 @@
   </ul>
 </div>
 <app-photo-stripe
+  [height]="divHeight()"
   photo="https://res.cloudinary.com/ddbrs5z8v/image/upload/v1770765109/whoWeAre-2_haz93a.jpg"
 >
-  <div class="whoweare-photo-stripe-text">
+  <div class="whoweare-photo-stripe-text" #extraText>
     <h1 class="whoweare-photo-stripe-text-title">{{ extras.title }}</h1>
     <ul>
       @for (item of extras.items; track item) {

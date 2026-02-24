@@ -18,14 +18,22 @@ export class Article {
   router = inject(Router);
   articleName: string = this.activeRoute.snapshot.params['articleId'];
   cards = text.news.cards;
-  article = this.cards.find(({ link }) => link === this.articleName);
+  article = this.cards.find(({ link }) => link === this.articleName) || {
+    photo: '',
+    title: '',
+    shortText: '',
+    link: '',
+    fullText: [],
+    autor: '',
+    source: '',
+  };
 
   returnToNews = () => {
     this.router.navigate([`../../${Url.news}`]);
   };
 
   ngAfterViewInit() {
-    if (!this.article) {
+    if (!this.article.autor) {
       console.log('first');
       this.returnToNews();
     }

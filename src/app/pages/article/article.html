@@ -21,19 +21,19 @@
       }
 
       @if (paragraph[0] === 'b') {
-        <p class="articles-p bold">{{ paragraph[1] }}</p>
+        <p class="articles-p font-bold">{{ paragraph[1] }}</p>
       }
 
       @if (paragraph[0] === 'h2') {
-        <h2 class="articles-h2 violet-letter thin-letter">{{ paragraph[1] }}</h2>
+        <h2 class="violet-letter thin-letter">{{ paragraph[1] }}</h2>
       }
 
       @if (paragraph[0] === 'h3') {
-        <h3 class="articles-h3 violet-letter thin-letter">{{ paragraph[1] }}</h3>
+        <h3 class="violet-letter thin-letter">{{ paragraph[1] }}</h3>
       }
 
       @if (paragraph[0] === 'li') {
-        <li class="articles-li mb-2 roboto">
+        <li class="mb-2 roboto">
           {{ paragraph[1] }}
         </li>
       }

@@ -1,23 +1,22 @@
 :host {
   display: block;
   .articles-photo-container {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 2rem;
-}
-.articles-photo-container img {
-  width: 100%;
-}
-.circle-left {
-  color: var(--violet);
-  font-size: 2rem;
-  margin-right: 1vw;
-}
-.articles-title {
-  margin-bottom: 2rem;
-}
-.articles-p {
-  margin-bottom: 2rem;
-}
-
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+  .articles-photo-container img {
+    width: 100%;
+  }
+  .circle-left {
+    color: var(--violet);
+    font-size: 2rem;
+    margin-right: 1vw;
+  }
+  .articles-title {
+    margin-bottom: 2rem;
+  }
+  .articles-p {
+    margin-bottom: 2rem;
+  }
 }

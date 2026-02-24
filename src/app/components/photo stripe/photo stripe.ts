@@ -9,5 +9,5 @@ import { Component, input } from '@angular/core';
 export class PhotoStripe {
   text = input<string>();
   photo = input.required<string>();
-  height = input<string>();
+  height = input<number | string>();
 }
