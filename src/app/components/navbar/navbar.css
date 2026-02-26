@@ -1,3 +1,9 @@
 :host {
   display: block;
+  .hover-nav-button {
+    &:hover {
+      transition: 0.3s;
+      border-bottom: 5px solid var(--violet);
+    }
+  }
 }

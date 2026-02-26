@@ -41,12 +41,14 @@
     <ul class="menu menu-horizontal px-1 h-max p-0">
       @for (route of arrayOfTitles; track route.link) {
         <li
-          class="p-0 pt-4 h-16 m-0"
+          class="p-0 pt-4 h-19 m-0 hover-nav-button cursor-pointer"
+          [routerLink]="route.link"
           [routerLinkActiveOptions]="{ exact: true }"
           [routerLinkActive]="['border-b-5', 'text-(--violet)']"
+          [style]="!$last ? 'border-right: 1px solid var(--super-light-grey);' : ''"
         >
-          <a class="color-(--light-grey)" [routerLink]="route.link">
-            {{ route.title }}
+          <a class="text-(--text-grey) hover:bg-white">
+            <span>{{ route.title }}</span>
           </a>
         </li>
       }
