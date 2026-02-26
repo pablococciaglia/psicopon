@@ -1,51 +1,31 @@
 :host {
   display: block;
-.text-body {
-  background-color: var(--beige);
-}
-.text-body-long {
-  padding: 80px 20vw 40px 20vw;
-  color: var(--text-grey);
-}
-.text-body-long h3 {
-  color: var(--text-grey);
-}
-.text-body-long h3 a {
-  color: var(--link-text);
-}
-.text-body-short {
-  display: flex;
-  justify-content: center;
-  gap: 10vw;
-  padding-top: 8px;
-}
-.text-body-short h2 {
-  display: flex;
-  align-items: center;
-}
-.text-body-short h2 a {
-  color: var(--link-text);
-}
-.text-body-short h2 i {
-  font-size: 2rem;
-  margin-right: 10px;
-}
-.footer-whatsapp i {
-  color: var(--whatsapp);
-}
-.footer-mail i {
-  color: var(--linkedin);
-}
-
-@media only screen and (max-width: 725px) {
+    background-color: var(--beige);
+  .text-body {
+    background-color: var(--beige);
+  }
   .text-body-long {
-    padding: 80px 2vw 40px 2vw;
+  padding-top: 3vw;
+  padding-bottom: 3vw;
+  width: 100%;
+  padding-right: 15px; /* o 1rem */
+  padding-left: 15px;  /* o 1rem */
+  margin-right: auto;
+  margin-left: auto;
+  box-sizing: border-box;
   }
-  .text-body-short {
-    flex-direction: column;
-    align-items: center;
-    gap: unset;
+  .text-body-long h3 {
+    color: var(--text-grey);
   }
-}
+  .text-body-long h3 a {
+    color: var(--link-text);
+  }
+
+
+/* Media queries para simular el comportamiento responsive de Bootstrap */
+@media (min-width: 576px) { .text-body-long { max-width: 540px; } }
+@media (min-width: 768px) { .text-body-long { max-width: 720px; } }
+@media (min-width: 992px) { .text-body-long { max-width: 960px; } }
+@media (min-width: 1200px) { .text-body-long { max-width: 1140px; } }
 
 }
