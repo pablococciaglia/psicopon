@@ -1,4 +1,4 @@
-import { Component, ElementRef, signal, viewChild } from '@angular/core';
+import { Component, ElementRef, HostListener, signal, viewChild } from '@angular/core';
 import { text } from '../../components/texts';
 import { PhotoStripe } from '../../components/photo stripe/photo stripe';
 import { VioletStripe } from '../../components/violet stripe/violet stripe';
@@ -19,16 +19,21 @@ export class WhoWeAre {
     this.divHeight.set(this.divElement()?.nativeElement.offsetHeight);
   }
 
-  ngAfterViewInit() {
-    window.addEventListener('resize', () => {
-      console.log(this.divHeight());
-      this.setHeight();
-    });
+  @HostListener('window:resize')
+  onResize() {
+    this.setHeight();
+  }
+
+  @HostListener('window:load')
+  onLoad() {
+    this.setHeight();
   }
 
   faLinkedin = faLinkedin;
   portada = text.whoWeAre.portada;
   title = text.whoWeAre.title;
+  pretext = text.whoWeAre.pretext;
+  pretitle = text.whoWeAre.pretitle;
   members = text.whoWeAre.members;
   extras = text.whoWeAre.extras;
   stuff = text.whoWeAre.stuff;

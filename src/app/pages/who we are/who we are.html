@@ -5,6 +5,10 @@
 <app-violet-stripe [text]="title" />
 <div class="container">
   <h1 class="whoweare-title violet-letter thin-letter">
+    {{ pretitle }}
+  </h1>
+  <h3 class="text-(--text-grey) mb-5">{{ pretext }}</h3>
+  <h1 class="whoweare-title violet-letter thin-letter">
     {{ members.title }}
   </h1>
   @for (member of members.professionals; track member.license) {

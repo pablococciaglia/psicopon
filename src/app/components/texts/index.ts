@@ -1,18 +1,20 @@
 export const text = {
   home: {
-    title: 'No encontrás la salida... ¿Y si te ayudamos a construirla?',
+    title: 'Hablar puede ser el primer paso',
   },
   textBody: {
-    title: '¿Por qué Red Psicólogos UBA?',
+    title: 'Dar el primer paso para consultar no siempre resulta fácil',
     text1:
-      'Nombramos nuestro equipo con las siglas de la facultad, ya que es un orgullo para nosotros ser egresados de una de las Universidades más prestigiosas de Latinoamérica.',
-    text2:
-      'Nos conocimos en nuestro recorrido hospitalario, práctica que creemos fundamental para la formación, y decidimos armar una red para brindar a los pacientes una atención basada en la escucha de la palabra, respetando sus tiempos y posibilitando descubrir los motivos del malestar que los aqueja, para poder hacer algo al respecto. ',
+      'En ocasiones podemos poner en palabras lo que nos pasa; en otras, simplemente sentimos que algo nos preocupa o nos inquieta y necesitamos un espacio para pensarlo y comprenderlo mejor.',
+    text2: ' Podés comunicarte con nosotros para coordinar una primera entrevista.',
     text3:
-      'Ofrecemos atención psicológica virtual y presencial para residentes en Argentina o en el exterior. Podes comunicarte con nosotros enviando un WhatsApp:',
+      'A partir de ese primer encuentro evaluaremos tu situación y te propondremos la modalidad de trabajo más adecuada, asignándote un profesional de la red. Podes comunicarte con nosotros enviando un WhatsApp:',
     text4: 'o al mail:',
   },
   whoWeAre: {
+    pretitle: '¿Por qué Red de Psicólogos UBA?',
+    pretext:
+      'El nombre de la red surge de su origen en la Universidad de Buenos Aires y de la formación hospitalaria compartida por varios de sus integrantes, experiencia clave que dio lugar a la creación de un espacio de atención psicológica profesional, comprometido y responsable. Con el crecimiento del equipo se incorporaron también profesionales de otras universidades reconocidas del país, todos con una misma orientación clínica y ética de trabajo. El enfoque se basa en la escucha, el respeto por la singularidad y el acompañamiento personalizado, ayudando a comprender el origen del malestar para generar cambios posibles en la vida cotidiana. La red brinda atención psicológica a adolescentes y adultos, de manera presencial y online, tanto en Argentina como en el exterior.',
     portada: 'Quiénes Somos',
     title: 'Nuestro equipo de profesionales',
     members: {
@@ -73,9 +75,9 @@ export const text = {
     stuff: {
       title: 'Nuestros Profesionales',
       people: [
-        'Lic. Daniel Andrés Gareca - M.N. 57.401',
-        'Lic. María Fernanda San Miguel - M.N. 53.361',
-        'Lic. Noelia Vega - M.N. 39.286',
+        'Lic. Ignacio Lohfeldt - M.N. 57.839',
+        'Lic. Micaela Díaz - M.N. 64.436',
+        'Lic. Ana Cimino - M.N. 63.077',
       ],
     },
     extras: {
@@ -95,7 +97,7 @@ export const text = {
     cards: [
       {
         photo:
-          'https://res.cloudinary.com/ddbrs5z8v/image/upload/v1770765080/attention-online_azo8a6.png',
+          'https://res.cloudinary.com/ddbrs5z8v/image/upload/v1772060219/terapia_online_wgkahh.png',
         title: 'Terapia online',
         body: 'Una nueva forma de recibir apoyo psicológico desde cualquier lugar del mundo es a partir de la terapia online.  Brindamos servicios de terapia en línea que están diseñados para proporcionar comodidad, accesibilidad y confidencialidad a pacientes de habla hispana en todo el mundo. Con horarios flexibles y la posibilidad de conectarse desde la privacidad de tu hogar, te ofrecemos una atención personalizada, utilizando diversas herramientas de comunicación.',
       },

@@ -34,7 +34,6 @@ export class Article {
 
   ngAfterViewInit() {
     if (!this.article.autor) {
-      console.log('first');
       this.returnToNews();
     }
   }
