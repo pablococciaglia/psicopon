@@ -97,7 +97,7 @@ export const text = {
     cards: [
       {
         photo:
-          'https://res.cloudinary.com/ddbrs5z8v/image/upload/v1772060219/terapia_online_wgkahh.png',
+          'https://res.cloudinary.com/ddbrs5z8v/image/upload/v1772105095/terapia_online_lodjvw.png',
         title: 'Terapia online',
         body: 'Una nueva forma de recibir apoyo psicológico desde cualquier lugar del mundo es a partir de la terapia online.  Brindamos servicios de terapia en línea que están diseñados para proporcionar comodidad, accesibilidad y confidencialidad a pacientes de habla hispana en todo el mundo. Con horarios flexibles y la posibilidad de conectarse desde la privacidad de tu hogar, te ofrecemos una atención personalizada, utilizando diversas herramientas de comunicación.',
       },
