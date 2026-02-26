@@ -14,14 +14,7 @@ import { map } from 'rxjs';
 })
 export class Footer {
   router = inject(ActivatedRoute);
-  isHome = toSignal(
-    this.router.url.pipe(
-      map((url) => {
-        console.log(url);
-        return url[0].path === '/';
-      }),
-    ),
-  );
+  isHome = signal(false);
 
   faWhatsapp = faWhatsapp;
   faEnvelope = faEnvelope;
