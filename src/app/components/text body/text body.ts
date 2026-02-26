@@ -1,4 +1,4 @@
-import { Component, input } from '@angular/core';
+import { Component } from '@angular/core';
 import { text } from '../texts';
 
 @Component({
@@ -8,7 +8,6 @@ import { text } from '../texts';
   styleUrl: './text body.css',
 })
 export class TextBody {
-  isHome = input<boolean>();
   text1 = text.textBody.text1;
   text2 = text.textBody.text2;
   text3 = text.textBody.text3;
